@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GONA CAFE</title>
+    <link rel="stylesheet" href="style/all.min.css">
+    <link rel="stylesheet" href="style/bootstrap.min.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg p-3">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#main">GONA CِAFE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#main">الصفحة الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link"
+                            href="https://api.whatsapp.com/send/?phone=%2B966532344669&text&type=phone_number&app_absent=0">الموقع</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            المنيو
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="menu.html">قائمة الخيارات</a></li>
+                            
+
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">منتجاتنا</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer">للتواصل معنا</a>
+                    </li>
+                </ul>
+                <img src="media/logo_nav.png" width="4%" loading="lazy" />
+            </div>
+        </div>
+    </nav>
+
+
+
+    <div class="main d-flex justify-content-around align-items-center" id="main">
+        <div class="logo-cafe">
+            <img src="media/logo.png" alt="error or image" width="100%" loading="lazy">
+        </div>
+        <div class="text-home text-center d-flex flex-column gap-4 p-4">
+            <h1 class="fst-italic">GONA CِAFE</h1>
+            <h2 class="typing">كما لم تتزوق القهوة من قبل</h2>
+        </div>
+
+    </div>
+    <div class="menu d-flex justify-content-evenly flex-column gap-4 align-items-center">
+        <div class="title-menu">
+            <h2 class="text-center fst-italic">قائمة الخيارات</h2>
+        </div>
+        <div class="gallery">
+            <img src="media/list/مشروبات ساخنه.png" width="12%" loading="lazy" />
+            <img src="media/list/قهوة مختصه.png" width="12%" loading="lazy" />
+            <img src="media/list/قهوة باردة.png" width="12%" loading="lazy" />
+            <img src="media/list/صودا.png" width="12%" loading="lazy" />
+            <img src="media/list/شاي.png" width="12%" loading="lazy" />
+            <img src="media/list/بوكسات.png" width="12%" loading="lazy" />
+            <img src="media/list/حلويات.png" width="12%" loading="lazy" />
+        </div>
+        <a href="menu.html">مشاهدة قائمة الخيارات</a>
+    </div>
+
+    <div class="contact d-flex flex-column gap-4" id="footer">
+        <h2 class="text-center">للتواصل معنا</h2>
+        <div class="contant d-flex justify-content-between align-items-center">
+            <div class="media d-flex justify-content-center align-items-center gap-3">
+                <a href="https://api.whatsapp.com/send/?phone=%2B966532344669&text&type=phone_number&app_absent=0"><i
+                        class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.tiktok.com/@gonacoffee3?_t=8pOCHakgLcu&_r=1"><i
+                        class="fa-brands fa-tiktok"></i></a>
+                <a href="https://www.instagram.com/gonacoffee/?hl=ar"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.snapchat.com/@gonacoffee"><i class="fa-brands fa-snapchat"></i></a>
+            </div>
+            <div class="logo">
+                <img src="media/logo.png" alt="error or image" width="90%" loading="lazy">
+                <h1 class="text-center text-success">GONA CِAFE</h1>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script type="module">
+        import { Switch_pages } from "./js/menu.js";
+        window.Switch_pages = Switch_pages;
+    </script>
+</body>
+
+</html>

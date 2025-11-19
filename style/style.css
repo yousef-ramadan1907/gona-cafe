@@ -1,0 +1,276 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+
+.main {
+    width: 100%;
+    height: 100vh;
+    background-color: #004a37;
+}
+
+.main .logo-cafe {
+    width: 50%;
+    padding-right: 2em;
+    animation: animation ease 1.8s;
+
+}
+
+.main .text-home {
+    width: 50%;
+    animation: animation ease 1.8s;
+
+}
+
+@keyframes animation {
+    0% {
+        opacity: .3;
+        margin-left: 4em;
+        transform: scale(0.8);
+    }
+
+    100% {
+        opacity: 1;
+
+    }
+}
+
+.main .text-home h1 {
+    font-size: 3.5em;
+}
+
+.navbar {
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    border-radius: 0.3em;
+}
+
+.main .logo-cafe img {
+    transition: 0.5s;
+}
+
+.main .logo-cafe img:hover {
+    transform: scale(0.9);
+}
+
+.icons i {
+    transition: 0.5s;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.icons i:hover {
+    transform: rotateY(360deg) scale(1.4);
+    color: black;
+}
+
+.menu {
+    width: 100%;
+    height: 90vh;
+    background-color: #004a37;
+    padding: 1em;
+
+}
+
+.typing {
+    padding-right: 5px;
+    animation: blink 0.7s infinite;
+    color: white;
+    animation: animation ease 1s;
+}
+
+.menu .title-menu h2 {
+    font-weight: bold;
+    font-size: 3.5em;
+    font-family: Noto Kufi Arabic sans-serif;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2em;
+    justify-content: center;
+}
+
+.gallery img {
+    border-radius: 0.625em;
+    transition: 0.3s;
+    cursor: pointer;
+
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.562);
+    border: none;
+}
+
+.gallery img:active {
+    transform: scale(1.1);
+}
+
+.menu a {
+    text-decoration: none;
+    color: #004a37;
+    background-color: white;
+    padding: 0.3em 0.7em;
+    border: none;
+    border-radius: 0.3em;
+    transition: 0.3s;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.menu a:hover {
+    background-color: #008664;
+    color: white;
+    border: 0.1em white;
+    box-sizing: 1px 1px 30px white;
+    font-size: 1.5em;
+}
+
+.contact {
+    width: 100%;
+    background-color: #004a37;
+    height: 70vh;
+    padding: 2em;
+}
+
+.contact .media {
+    width: 50%;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact .media i {
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.contact .media i:hover {
+    transform: rotateY(360deg) scale(1.4);
+    color: black;
+}
+
+.contact .contant .logo {
+    width: 40%;
+}
+
+
+
+/*phone style*/
+@media (max-width: 599px) {
+    .main {
+        flex-direction: column;
+        justify-content: space-evenly !important;
+        align-items: center;
+    }
+
+    .main .logo-cafe {
+        width: 100%;
+    }
+
+    .main .text-home {
+        width: 100%;
+    }
+
+    .menu {
+        height: auto;
+    }
+
+    .gallery img {
+        width: 45%;
+
+    }
+
+    .contact {
+        height: auto;
+    }
+
+    .contact .contant {
+        flex-direction: column;
+        align-items: center;
+        gap: 3em;
+    }
+
+    .contact .contant .logo {
+        width: 80%;
+    }
+
+    .contact .contant .logo img {
+        width: 100%;
+    }
+
+    .contact .contant .media {
+        font-size: 1.5em;
+        width: 80%;
+    }
+}
+
+/* Tablet styles */
+@media (min-width: 600px) and (max-width: 1024px) {
+    .main {
+        flex-direction: column;
+        justify-content: space-evenly !important;
+        align-items: center;
+    }
+
+    .main .logo-cafe {
+        width: 100%;
+    }
+
+    .main .text-home {
+        width: 100%;
+    }
+
+    .menu {
+        height: auto;
+    }
+
+    .gallery img {
+        width: 40%;
+
+    }
+
+    .contact {
+        height: auto;
+        justify-content: space-between;
+    }
+
+    .contact .contant {
+        flex-direction: column;
+        align-items: center;
+        gap: 3em;
+    }
+
+    .contact .contant .logo {
+        width: 80%;
+    }
+
+    .contact .contant .logo img {
+        width: 100%;
+    }
+
+    .contact .contant .media {
+        font-size: 1.5em;
+        width: 80%;
+    }
+
+    .contact h2 {
+        font-size: 3.5em;
+    }
+
+    .contact .media i {
+        font-size: 1.5em;
+    }
+
+}
