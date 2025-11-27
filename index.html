@@ -35,7 +35,7 @@
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="menu.html">قائمة الخيارات</a></li>
-                            
+
 
                         </ul>
                     </li>
@@ -63,21 +63,32 @@
         </div>
 
     </div>
-    <div class="menu d-flex justify-content-evenly flex-column gap-4 align-items-center">
+    <div class="space-bet"></div>
+    <div class="menu d-flex justify-content-center flex-column gap-3 align-items-center">
         <div class="title-menu">
             <h2 class="text-center fst-italic">قائمة الخيارات</h2>
         </div>
-        <div class="gallery">
-            <img src="media/list/مشروبات ساخنه.png" width="12%" loading="lazy" />
-            <img src="media/list/قهوة مختصه.png" width="12%" loading="lazy" />
-            <img src="media/list/قهوة باردة.png" width="12%" loading="lazy" />
-            <img src="media/list/صودا.png" width="12%" loading="lazy" />
-            <img src="media/list/شاي.png" width="12%" loading="lazy" />
-            <img src="media/list/بوكسات.png" width="12%" loading="lazy" />
-            <img src="media/list/حلويات.png" width="12%" loading="lazy" />
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <a href="menu.html"><img src="media/first.png" class="d-block w-100" alt="..."></a>
+                </div>
+                <div class="carousel-item">
+                    <a href="menu.html"><img src="media/second.png" class="d-block w-100" alt="..."></a>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
-        <a href="menu.html">مشاهدة قائمة الخيارات</a>
+        <a href="menu.html" class="change">مشاهدة قائمة الخيارات</a>
     </div>
+    <div class="space-bet"></div>
 
     <div class="contact d-flex flex-column gap-4" id="footer">
         <h2 class="text-center">للتواصل معنا</h2>
@@ -92,12 +103,12 @@
             </div>
             <div class="logo">
                 <img src="media/logo.png" alt="error or image" width="90%" loading="lazy">
-                <h1 class="text-center text-success">GONA CِAFE</h1>
+                <h1 class="text-center text-success">GONA CAFE</h1>
             </div>
         </div>
 
     </div>
-    </div>
+
 
 
 
@@ -105,10 +116,6 @@
 
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
-    <script type="module">
-        import { Switch_pages } from "./js/menu.js";
-        window.Switch_pages = Switch_pages;
-    </script>
 </body>
 
 </html>

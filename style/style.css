@@ -4,6 +4,25 @@
     box-sizing: border-box;
     color: white;
 }
+.carousel-inner {
+    height: 100vh;
+    width: 80%;
+    left: 10%;
+}
+
+.carousel-control-next {
+    right: 6%;
+}
+
+.carousel-control-prev {
+    left: 6%;
+}
+.space-bet{
+    height: 20vh;
+    background-color:  #004a37;
+}
+
+
 
 
 .main {
@@ -116,7 +135,7 @@
     transform: scale(1.1);
 }
 
-.menu a {
+.menu .change {
     text-decoration: none;
     color: #004a37;
     background-color: white;
@@ -128,7 +147,7 @@
     font-size: 1.3em;
 }
 
-.menu a:hover {
+.menu .change:hover {
     background-color: #008664;
     color: white;
     border: 0.1em white;
@@ -214,6 +233,24 @@
         font-size: 1.5em;
         width: 80%;
     }
+    .space-bet{
+        height: 10vh;
+        border: none;
+    }
+    .carousel-inner {
+       height: 35vh;
+       width: 95%;
+       left: 2%;
+}
+    .carousel-control-next {
+    bottom: 5vh;
+        opacity: 0.09 !important;
+}
+
+.carousel-control-prev {
+    bottom: 5vh;
+    opacity: 0.09 !important;
+}
 }
 
 /* Tablet styles */
@@ -272,5 +309,19 @@
     .contact .media i {
         font-size: 1.5em;
     }
+    .carousel-inner {
+       height: 35vh;
+    width: 95%;
+    left: 2%;
+}
+    .carousel-control-next {
+    bottom: 3vh;
+        opacity: 0.09 !important;
+}
+
+.carousel-control-prev {
+    bottom: 3vh;
+    opacity: 0.09 !important;
+}
 
 }

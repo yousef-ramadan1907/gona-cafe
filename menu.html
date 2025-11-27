@@ -14,7 +14,7 @@
 <body>
     <nav class="navbar navbar-expand-lg p-3">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">GONA CِAFE</a>
+            <a class="navbar-brand" href="index.html">GONA CAFE</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -62,12 +62,32 @@
     </nav>
     <div class="space-1"></div>
     <div class="main p-3">
+
+<div class="gallery the-menu d-flex justify-content-center align-items-center">
+            <img src="media/list/مشروبات ساخنه.png" width="12%" loading="lazy" onclick="Switch_pages('drink-1')" />
+            <img src="media/list/قهوة مختصه.png" width="12%" loading="lazy" onclick="Switch_pages('drink-5')"/>
+            <img src="media/list/قهوة باردة.png" width="12%" loading="lazy"onclick="Switch_pages('drink-4')" />
+            <img src="media/list/صودا.png" width="12%" loading="lazy" onclick="Switch_pages('drink-2')"/>
+            <img src="media/list/شاي.png" width="12%" loading="lazy" onclick="Switch_pages('drink-3')"/>
+            <img src="media/list/بوكسات.png" width="12%" loading="lazy" onclick="Switch_pages('drink-6')"/>
+            <img src="media/list/حلويات.png" width="12%" loading="lazy" onclick="Switch_pages('drink-7')"/>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         <div class="title-page">
-            <h1 class="text-center text-light fst-italic fw-bold">قائمة الخيارات</h1>
+            <h1 class="text-center text-light fst-italic fw-bold d-none title">قائمة الخيارات</h1>
         </div>
 
         <!-- drink-1 -->
-        <div class="container mt-4 pages" id="drink-1">
+        <div class="container mt-4 d-none pages" id="drink-1">
             <div class="row g-3">
 
                 <div class="col-6 col-md-4">
@@ -168,10 +188,10 @@
                     <img src="media/list/مشروبات الصودا/ايس تي.png" class="img-fluid rounded" loading="lazy">
                 </div>
                 <div class="col-6 col-md-4">
-                    <img src="media/list/مشروبات الصودا/بايسن.png" class="img-fluid rounded" loading="lazy">
+                    <img src="media/list/مشروبات الصودا/بايسن.png" class="img-fluid rounded" loading="lazy" />
                 </div>
                 <div class="col-6 col-md-4">
-                    <img src="media/list/مشروبات الصودا/ريدبول.png" class="img-fluid rounded" loading="lazy">
+                    <img src="media/list/مشروبات الصودا/ريدبول.png" class="img-fluid rounded" loading="lazy" />
                 </div>
                 <div class="col-6 col-md-4">
                     <img src="media/list/مشروبات الصودا/سفن.png" class="img-fluid rounded" loading="lazy">
@@ -184,6 +204,12 @@
                 </div>
                 <div class="col-6 col-md-4">
                     <img src="media/list/مشروبات الصودا/هوس.png" class="img-fluid rounded" loading="lazy">
+                </div>
+                <div class="col-6 col-md-4 ">
+                    <img src="media/list/ماء/مايه.png" class="img-fluid rounded" loading="lazy">
+                </div>
+                <div class="col-6 col-md-4 ">
+                    <img src="media/list/ماء/مايه صغيره.png" class="img-fluid rounded" loading="lazy">
                 </div>
             </div>
         </div>
@@ -347,21 +373,8 @@
     </div>
 
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script>
-        let pages = document.getElementsByClassName("pages");
+    <script src="js/menu.js"></script>
 
-        function remove() {
-            for (let i = 0; i < pages.length; i++) {
-                pages[i].classList.add('d-none');
-            }
-        }
-
-        function Switch_pages(PageId) {
-            remove();
-            let page = document.getElementById(PageId);
-            page.classList.remove('d-none');
-        }
-    </script>
 
 
 </body>
